@@ -1,5 +1,7 @@
 # publicWelfareWeb 公益活动管理系统
 
+## 功能简介
+
 1. 信息发布管理
 
 * 增加活动信息。当有新活动发布时，管理员负责添加和发布活动信息，包括活动主题、活动目的、活动意义、活动参与对象、活动时间、活动地点、活动内容、活动的流程、活动的具体流程、财务预算、活动的可执行报告、应急措施等等。
@@ -64,5 +66,109 @@
 * 人员管理。当报名人数达到预期后，开始创建组织，通知报名成功人员，具体活动流程及注意事项。
 
 * 管理活动。公益活动成员的统计、公益活动签到、记录义工参加活动次数。 
+
+## 目录结构
+
+初始的目录结构如下：
+
+~~~
+www  WEB部署目录（或者子目录）
+├─application           应用目录
+│  ├─common             公共模块目录（可以更改）
+│  ├─module_name        模块目录
+│  │  ├─common.php      模块函数文件
+│  │  ├─controller      控制器目录
+│  │  ├─model           模型目录
+│  │  ├─view            视图目录
+│  │  └─ ...            更多类库目录
+│  │
+│  ├─command.php        命令行定义文件
+│  ├─common.php         公共函数文件
+│  └─tags.php           应用行为扩展定义文件
+│
+├─config                应用配置目录
+│  ├─module_name        模块配置目录
+│  │  ├─database.php    数据库配置
+│  │  ├─cache           缓存配置
+│  │  └─ ...            
+│  │
+│  ├─app.php            应用配置
+│  ├─cache.php          缓存配置
+│  ├─cookie.php         Cookie配置
+│  ├─database.php       数据库配置
+│  ├─log.php            日志配置
+│  ├─session.php        Session配置
+│  ├─template.php       模板引擎配置
+│  └─trace.php          Trace配置
+│
+├─route                 路由定义目录
+│  ├─route.php          路由定义
+│  └─...                更多
+│
+├─public                WEB目录（对外访问目录）
+│  ├─index.php          入口文件
+│  ├─router.php         快速测试文件
+│  └─.htaccess          用于apache的重写
+│
+├─thinkphp              框架系统目录
+│  ├─lang               语言文件目录
+│  ├─library            框架类库目录
+│  │  ├─think           Think类库包目录
+│  │  └─traits          系统Trait目录
+│  │
+│  ├─tpl                系统模板目录
+│  ├─base.php           基础定义文件
+│  ├─console.php        控制台入口文件
+│  ├─convention.php     框架惯例配置文件
+│  ├─helper.php         助手函数文件
+│  ├─phpunit.xml        phpunit配置文件
+│  └─start.php          框架入口文件
+│
+├─extend                扩展类库目录
+├─runtime               应用的运行时目录（可写，可定制）
+├─vendor                第三方类库目录（Composer依赖库）
+├─build.php             自动生成定义文件（参考）
+├─composer.json         composer 定义文件
+├─LICENSE.txt           授权说明文件
+├─README.md             README 文件
+├─think                 命令行入口文件
+~~~
+
+> 切换到根目录后，启动命令：php think run
+
+## 环境
+
+语言：
+* 前端：HTML CSS 使用Bootstrap框架</br>
+* 后端：PHP 使用Thinkphp框架</br>
+
+系统环境：windows wamp平台开发 使用chrome</br>
+mySql端口： 127.0.0.1:3306</br>
+Apache： 5.7.23</br>
+PHP 版本： 7.2.10</br>
+管理工具：composer</br>
+数据库：publicWelfare</br>
+
+## 部署：
+
+1. 安装wamp
+2. 打开wamp 
+3. 在文件夹下运行命令 php think run
+4. 浏览器中打开localhost:8000/
+
+
+## 版权信息
+
+ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
+
+本项目包含的第三方源码和二进制文件之版权信息另行标注。
+
+版权所有Copyright © 2006-2018 by ThinkPHP (http://thinkphp.cn)
+
+All rights reserved。
+
+ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
+
+更多细节参阅 [LICENSE.txt](LICENSE.txt)
 
 
