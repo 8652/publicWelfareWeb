@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>公益活动管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js">
+    </script>
+
+  <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h3>
+        新的赞助商
+      </h3>
+      <nav class="navbar navbar-default" role="navigation">   
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+               <a href="../showList/showActivity.html">公益活动</a>
+            </li>
+            <li>
+               <a href="../showList/showTraining.html">培训管理</a>
+            </li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">人员管理<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                   <a href="../showList/showVolunteer.html">志愿者管理</a>
+                </li>
+                <li>
+                   <a href="../showList/showSponsor.html">赞助商管理</a>
+                </li>
+                <li>
+                   <a href="../showList/showRecipient.html">受助者管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" />
+            </div> <button type="submit" class="btn btn-default">搜索</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+               <a href="../../index.html">登出</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+      <!--当有新活动发布时，管理员负责添加和发布活动信息，包括活动主题、活动目的、活动意义、活动参与对象、活动时间、活动地点、活动内容、活动的流程、活动的具体流程、财务预算、活动的可执行报告、应急措施等等。-->
+      <!--主题图片待定-->
+      <form role="form">
+        <div class="form-group">
+           <label for="exampleInputTheme1">赞助商编号</label><input type="text" class="form-control" id="exampleInputTheme1" value="00003" disabled />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputDestination1">登陆密码</label><input type="text" class="form-control" id="exampleInputDestination1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputMeaning1">单位名称</label><input type="text" class="form-control" id="exampleInputMeaning1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputMeaning1">负责人名称</label><input type="text" class="form-control" id="exampleInputMeaning1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputTime1">地址</label><input type="text" class="form-control" id="exampleInputTime1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputPosition1">联系电话</label><input type="text" class="form-control" id="exampleInputPosition1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputContent1">电子邮箱</label><input type="text" class="form-control" id="exampleInputContent1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputFlow1">邮政编码</label><input type="text" class="form-control" id="exampleInputFlow1" />
+        </div>
+        <div class="checkbox">
+        </div> <a type="submit" class="btn btn-default" href="../showList/showSponsor.html">提交</a>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </body>
+</html>

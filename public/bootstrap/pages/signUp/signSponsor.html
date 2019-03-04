@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>公益活动管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js">
+    </script>
+
+  <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h3>
+        赞助商注册
+      </h3>
+      <nav class="navbar navbar-default" role="navigation">        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+               <a href="../signUp/signVolunteer.html">义工注册</a>
+            </li>
+            <li>
+               <a href="../signUp/signSponsor.html">赞助商注册</a>
+            </li>
+            <li>
+               <a href="../../index.html">登录</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+      <!--赞助商注册时要求填写基本信息，包括单位名称、负责人、联系电话、地址、邮编、电子邮箱、登录密码等信息。系统检查所有信息填写正确并通过管理员审核后提示注册成功，并返回赞助商编号。-->
+      <form role="form">
+        <div class="form-group">
+           <label for="exampleInputCompany1">单位名称</label><input type="text" class="form-control" id="exampleInputCompany1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputName1">负责人</label><input type="text" class="form-control" id="exampleInputName1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputAddress1">地址</label><input type="text" class="form-control" id="exampleInputAddress1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputMail1">邮政编码</label><input type="text" class="form-control" id="exampleInputMail1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputPhone1">联系电话</label><input type="text" class="form-control" id="exampleInputPhone1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputEMail1">电子邮箱</label><input type="email" class="form-control" id="exampleInputEMail1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputPassword1">登录密码</label><input type="password" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="form-group">
+           <label for="exampleInputPassword1">再次确认密码</label><input type="password" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="checkbox">
+        </div> <a type="submit" class="btn btn-default" href="../../index.html">注册</a>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </body>
+</html>
